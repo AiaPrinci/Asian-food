@@ -26,6 +26,17 @@ class AsianFood {
 
 const food = new AsianFood('Noodles', '12$');
 const foodTwo = new AsianFood('Ramen', '12$');
+
 food.asian = 'Camel Hump, 30$';
+
 console.log(food.getFoodInfo());
 console.log(foodTwo.getFoodInfo());
+
+const element = document.createElement('h1');
+const element1 = document.createElement('h1');
+
+document.body.appendChild(element);
+document.body.appendChild(element1);
+
+element.textContent = `${food.name} - ${food.price} `;
+element1.textContent = `${foodTwo.name} - ${foodTwo.price}`;
